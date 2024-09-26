@@ -1,0 +1,65 @@
+/**
+ * description :- create by kawsar bin siraj
+ * created_at:- 25/09/2024 17:10:38
+ */
+@keyframes spin {
+    50% {
+        transform: rotate(180deg);
+        background: transparent;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.origin {
+    --origin-clr: #3b83f670;
+    width: 1em;
+    height: 1em;
+    font-size: 8vmin;
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-animation: spin 6s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+    animation: spin 6s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+    background: var(--origin-clr);
+}
+
+.origin:before,
+.origin:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px var(--origin-clr);
+    -webkit-transform-origin: inherit;
+    transform-origin: inherit;
+}
+.origin:before {
+    -webkit-animation: inherit;
+    animation: inherit;
+    animation-direction: reverse;
+    font-size: 0.12em;
+    content: attr(style);
+    display: flex;
+    text-align: center;
+    word-break: keep-all;
+    align-items: center;
+    z-index: 2;
+    border: solid 1px var(--origin-clr);;
+    color: #000;
+    z-index: 5;
+}
+.origin:after {
+    background: red;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    background: #000;
+}
+
+#toi {
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    grid-gap: 1em;
+}
