@@ -20,8 +20,11 @@ const InfiniteCarousel = () => {
                     <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
                     <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
                     <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
+                    <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
+                    <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
                 </div>
                 <div className="ticker">
+                    <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
                     <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
                     <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
                     <img src="https://kawsarbinsiraj.github.io/assets/img/favicon/favicon.png" alt="img" />
