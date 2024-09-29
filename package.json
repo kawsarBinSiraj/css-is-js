@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@lezer/highlight": "^1.2.1",
+    "@uiw/codemirror-theme-atomone": "^4.23.3",
+    "@uiw/codemirror-theme-dracula": "^4.23.3",
+    "@uiw/codemirror-theme-nord": "^4.23.3",
+    "@uiw/codemirror-theme-okaidia": "^4.23.3",
+    "@uiw/react-codemirror": "^4.23.3",
+    "codemirror": "^5.65.18",
     "next": "14.2.13",
     "next-themes": "^0.3.0",
     "react": "^18",
+    "react-codemirror2": "^8.0.0",
     "react-dom": "^18",
     "react-icons": "^5.3.0",
     "react-select": "^5.8.1"

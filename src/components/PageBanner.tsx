@@ -9,7 +9,7 @@ export const PageBanner = () => {
                 <div className="min-h-[75vh] flex items-center flex-col justify-center mb-10 mt-5">
                     <div className="banner-text mb-12">
                         <h1 className="text-8xl  mb-4 font-black">
-                            CSS is a synonym <br /> of javascript!
+                            CSS is a synonym <br /> of javascript!	
                         </h1>
                         <p className="text-3xl mb-4">
                             Isn't it? &#x2015; &nbsp;
@@ -17,7 +17,9 @@ export const PageBanner = () => {
                                 Let's prove
                             </Link>
                         </p>
-                        <p className="text-2xl">An approachable, performant and versatile interaction with pure css </p>
+                        <p className="text-2xl">
+                            An approachable, performant and versatile interaction with <var className="text-blue-500 font-poppins">pure css </var> 
+                            </p>
                     </div>
                     <TransformOrigin />
                 </div>

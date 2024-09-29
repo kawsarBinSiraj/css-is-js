@@ -4,6 +4,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'codemirror/lib/codemirror.css';
 
 :root {
     --background: #ffffff;
