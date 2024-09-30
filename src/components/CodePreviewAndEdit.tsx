@@ -26,7 +26,7 @@ const CodePreviewAndEdit: React.FC<CodePreviewAndEditProps> = ({ html = "", css 
 
     return (
         <div id="code-preview-edit">
-            <div className="pb-8 z-50">
+            <div className="pb-8 relative z-[500]">
                 <NavTabs
                     cb={(value) => {
                         setActive(value);

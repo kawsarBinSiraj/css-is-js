@@ -53,7 +53,6 @@ ul.ul-li {
     text-align: center;
     position: relative;
     overflow: hidden;
-    z-index : -10
 }
 
 #game .form-check img {
@@ -180,7 +179,6 @@ ul.ul-li {
     justify-content: center;
     color: #fff;
     border-radius : 4px;
-    z-index : 1;
 }   
 
 .refresh.icon {

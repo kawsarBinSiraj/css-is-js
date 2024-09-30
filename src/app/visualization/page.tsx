@@ -1,6 +1,6 @@
 "use client";
 import CodeWithSuspense from "@/components/CodeWithSuspense";
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 
 const Visualization = () => {
     return (

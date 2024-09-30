@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, Suspense } from "react";
-import { Options } from "./Options";
+import { SelectOpt } from "./SelectOpt";
+import { options } from "../lib/options";
 
 interface Props {
     cb?: (value: number | null) => void; // Adjusting cb to allow number or null
@@ -41,13 +42,7 @@ export const NavTabs: React.FC<Props> = ({ cb = () => {} }) => {
             <div className="ms-auto pb-2 flex items-center gap-2">
                 <p className="text-lg">Select Option:</p>
                 <Suspense fallback={<p>Loading...</p>}>
-                    <Options
-                        className="w-80"
-                        options={[
-                            { value: "infinite-carousel", label: "Infinite Carousel" },
-                            { value: "duck-hunt", label: "Duck Hunt (Game)" },
-                        ]}
-                    />
+                    <SelectOpt className="w-72" options={options} />
                 </Suspense>
             </div>
         </div>
