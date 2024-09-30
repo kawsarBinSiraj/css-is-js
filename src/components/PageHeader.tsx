@@ -5,8 +5,10 @@ import { FaGithub } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import LOGO from "../images/CSS_icon.svg.png";
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
 
 export const PageHeader = () => {
+    const pathname = usePathname(); 
     const { theme, setTheme } = useTheme();
 
     return (
@@ -18,7 +20,7 @@ export const PageHeader = () => {
                         .JS
                     </Link>
                     <nav className="nav flex gap-5 text-[15px] text-slate-500">
-                        <Link href={"/visualization"} className="hover:text-blue-600 dark:text-slate-400">
+                        <Link href={"/visualization"} className={`hover:text-blue-600 dark:text-slate-400 ${pathname === '/visualization' && 'text-blue-500'}`}>
                             <span className="relative inline-flex h-2 w-2 me-1">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>

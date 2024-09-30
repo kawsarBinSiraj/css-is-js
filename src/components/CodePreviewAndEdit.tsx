@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from "react";
 import { NavTabs } from "@/components/NavTabs";
 import CodeMirror from "@uiw/react-codemirror";
-import { atomone } from "@uiw/codemirror-theme-atomone";
+import { dracula } from "@uiw/codemirror-theme-dracula";
 import { javascript } from "@codemirror/lang-javascript";
 const extensions = [javascript({ jsx: true })];
 
@@ -26,7 +26,7 @@ const CodePreviewAndEdit: React.FC<CodePreviewAndEditProps> = ({ html = "", css 
 
     return (
         <div id="code-preview-edit">
-            <div className="pb-8">
+            <div className="pb-8 z-50">
                 <NavTabs
                     cb={(value) => {
                         setActive(value);
@@ -38,12 +38,12 @@ const CodePreviewAndEdit: React.FC<CodePreviewAndEditProps> = ({ html = "", css 
 
                 {active == 2 && (
                     <div id="html">
-                        <CodeMirror value={htmlView} height="500px" theme={atomone} extensions={extensions} onChange={handleHtmlView} />
+                        <CodeMirror value={htmlView} height="500px" theme={dracula} extensions={extensions} onChange={handleHtmlView} />
                     </div>
                 )}
                 {active == 3 && (
                     <div id="css">
-                        <CodeMirror value={cssView} height="500px" theme={atomone} extensions={extensions} onChange={handleCssView} />
+                        <CodeMirror value={cssView} height="500px" theme={dracula} extensions={extensions} onChange={handleCssView} />
                     </div>
                 )}
 

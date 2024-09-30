@@ -44,10 +44,17 @@ ul.ul-li {
     height: 92%;
     width: 96%;
     background-color: #F1F5F9;
-    z-index: 5;
+    z-index: 1;
     display: none; 
 }
 
+#game {
+    counter-reset: autoIncre;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index : -10
+}
 
 #game .form-check img {
     width: 50px;
@@ -105,13 +112,6 @@ ul.ul-li {
     visibility: hidden;
 }
 
-
-#game {
-    counter-reset: autoIncre;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
 
 #game .form-check .form-check-input[type="checkbox"]:checked {
     counter-increment: autoIncre ;
@@ -180,6 +180,7 @@ ul.ul-li {
     justify-content: center;
     color: #fff;
     border-radius : 4px;
+    z-index : 1;
 }   
 
 .refresh.icon {

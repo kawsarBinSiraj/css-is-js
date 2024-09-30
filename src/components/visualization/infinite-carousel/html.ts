@@ -1,5 +1,5 @@
-export const html = `<div id="carousel" class="text-[12px]">
-    <h2 class="text-2xl mb-3 text-black-600 font-light">Carousel Controller — </h2>
+export const html = `<div id="carousel" class="text-[16px]">
+    <h2 class="text-2xl mb-3 text-black-600">Carousel Controller — </h2>
     <div class="controller flex wrap items-center gap-1 mb-8">
         <input id="pause" type="checkbox" /> <label for="pause"> pause </label> &nbsp; <input id="reverse" type="checkbox" /> <label for="reverse"> Reverse </label> &nbsp;
         <input id="radius" type="checkbox" /> <label for="radius"> Card Circle </label> &nbsp; <input id="normal" checked type="radio" name="speed" />

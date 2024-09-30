@@ -1,7 +1,7 @@
 export const html = `<section id="game">
     <div class="flex-box"> 
         <div class="this-box">
-            <p class="mb-5 text-2xl">Click the duck to start the game</p>
+            <p class="mb-5 text-xl">Click the duck to start the game</p>
             <!-- Duck Hunt Box -->
             <ul class="ul-li">
                 <li>
